@@ -22,7 +22,7 @@ class googleLinks(HTMLParser):
 	    print urlstring
 	    try:
 	        request = Request(url=urlstring)
-	        request.add_header("User-Agent", "FooBrowser 2.3")
+	        request.add_header("User-Agent", "Mozilla/5.0 (AppleWebKit/531.21.10)")
 	  
 	        req = urlopen(request)	
 	        self.feed(req.read())
